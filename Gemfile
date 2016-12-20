@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # For postgres
 gem 'pg'
+# For authentication
+gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -22,7 +24,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'factory_girl_rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end

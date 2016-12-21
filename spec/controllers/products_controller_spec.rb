@@ -45,7 +45,7 @@ RSpec.describe ProductsController, type: :controller do
       end
     end
 
-    context 'invalid url' do
+    context 'not exist url' do
       it 'check variables and status' do
         post :show, params: { url: ENV['URL_BASE_SCRAPPER'] + 'something-bad' }
         expect(assigns(:product)).to eq nil

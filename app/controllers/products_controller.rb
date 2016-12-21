@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_user
+  before_action :authenticate_user!, :set_user
   before_action :set_scrapper, only: [:show]
 
   def show

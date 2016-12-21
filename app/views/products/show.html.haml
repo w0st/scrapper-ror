@@ -1,0 +1,30 @@
+.panel.panel-default
+  .panel-heading
+    = t('head_product_show')
+  .panel-body
+    - if !@error_message.nil?
+      .alert.alert-danger
+        = @error_message
+    - if @product
+      %table.table
+        %thead
+          %tr
+            %th
+              = t('label_slug')
+            %th
+              = t('label_title')
+            %th
+              = t('label_price_net')
+            %th
+              = t('label_price_gross')
+        %tbody
+          %tr
+            %td
+              = @product.slug
+            %td
+              = @product.title
+            %td
+              = number_to_currency(@product.price_net, unit: '£')
+            %td
+              = number_to_currency(@product.price_gross, unit: '£')
+    = link_to t('btn_search_again'), products_search_url, class: 'btn btn-primary'

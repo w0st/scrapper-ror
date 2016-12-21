@@ -21,3 +21,15 @@
 
 en:
   hello: "Hello world"
+  btn_search: "Search"
+  btn_search_again: "Search again"
+  label_type_url: "Type your URL below and hit the button"
+  label_slug: "Slug"
+  label_title: "Title"
+  label_price_net: "Price net"
+  label_price_gross: "Price gross"
+  head_product_search: "Product search"
+  head_product_show: "Product show"
+  msg_prohibited_url: "Sorry, you haven't permission to this link. Check the typed URL, please."
+  msg_not_found: "Sorry, the product didn't find. Check the typed URL, please."
+  msg_problem_with_connection: "Sorry, a problem with a connection to the server occurred. Check the typed URL or try again later."

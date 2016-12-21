@@ -1,0 +1,7 @@
+.panel.panel-default
+  .panel-heading
+    = t('head_product_search')
+  .panel-body
+    = bootstrap_form_tag url: products_show_path do |f|
+      = f.text_field(:url, label: t('label_type_url'))
+      = f.submit t('btn_search'), class: 'btn btn-primary'

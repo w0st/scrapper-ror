@@ -1,0 +1,10 @@
+rvm:
+  - 2.2.3
+before_script:
+before_script:
+  - createdb scrapper_test
+  - createdb scrapper_prod
+  - psql -c 'grant all privileges on database scrapper_test to postgres'
+  - psql -c 'grant all privileges on database scrapper_prod to postgres'
+addons:
+  postgresql: '9.3'

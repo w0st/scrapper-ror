@@ -24,5 +24,7 @@ module ScrapperRor
     config.generators do |g|
       g.fixture_replacement :factory_girl
     end
+    config.autoload_paths << "#{Rails.root}/lib/scrapper"
+    config.eager_load_paths << "#{Rails.root}/lib/scrapper"
   end
 end

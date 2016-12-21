@@ -1,0 +1,1 @@
+ENV['URL_BASE_SCRAPPER'] = 'http://www.saxoprint.co.uk/shop/'

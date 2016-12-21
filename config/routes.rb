@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   get 'products/search'
   post 'products/show'
   devise_for :users

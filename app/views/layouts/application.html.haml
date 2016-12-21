@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title ScrapperRor
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+
+  %body
+    = render 'shared/header'
+    .container
+      = render 'shared/notice'
+      = yield

@@ -1,0 +1,8 @@
+%nav.navbar.navbar-default
+  .container
+    %ul.nav.navbar-nav.col-md-10
+      %li.nav-item
+        = link_to 'Search', products_search_path, class: 'nav-link'
+    .col-md-2.right
+      = button_to 'Logout',  destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' if user_signed_in?
+      = button_to 'Login',  new_user_session_path, class: 'btn btn-primary navbar-btn' unless user_signed_in?

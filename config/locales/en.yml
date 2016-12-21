@@ -30,6 +30,8 @@ en:
   label_price_gross: "Price gross"
   head_product_search: "Product search"
   head_product_show: "Product show"
+  head_home: "Hello!"
   msg_prohibited_url: "Sorry, you haven't permission to this link. Check the typed URL, please."
   msg_not_found: "Sorry, the product didn't find. Check the typed URL, please."
   msg_problem_with_connection: "Sorry, a problem with a connection to the server occurred. Check the typed URL or try again later."
+  msg_hello: "Welcome to my scrapper-ror app!"
